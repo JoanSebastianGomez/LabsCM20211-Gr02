@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Labs20211-Gr02</string>
+    <string name="informacion_personal">Informacion personal</string>
+    <string name="women">Mujer</string>
+    <string name="men">Hombre</string>
+    <string name="sex">Sexo:</string>
+    <string name="date">Fecha de nacimiento:</string>
+    <string name="next">Siguiente</string>
+    <string name="last_name">Apellidos</string>
+    <string name="name">Nombre</string>
+    <string-array name="study">
+        <item>Grado de escolaridad</item>
+        <item>primaria</item>
+        <item>secundaria</item>
+        <item>universidad</item>
+        <item>otro</item>
+    </string-array>
 </resources>
