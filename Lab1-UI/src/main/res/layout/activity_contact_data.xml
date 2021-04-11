@@ -1,79 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ContactDataActivity">
 
-    <TextView
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:padding="8dp"
-        android:text="@string/contact_info"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="22sp" />
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:context=".ContactDataActivity">
 
-    <EditText
-        android:id="@+id/etTelephone"
-        style="@style/etContactInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/ic_phone"
-        android:drawableLeft="@drawable/ic_phone"
-        android:drawablePadding="5dp"
-        android:hint="@string/phone" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/contact_info"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
 
-    <EditText
-        android:id="@+id/etAddress"
-        style="@style/etContactInfo"
-        android:drawableStart="@drawable/ic_map"
-        android:drawableLeft="@drawable/ic_map"
-        android:drawablePadding="5dp"
+        <EditText
+            android:id="@+id/etTelephone"
+            style="@style/etContactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="5dp"
+            android:hint="@string/phone"
+            android:inputType="phone" />
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/address" />
+        <EditText
+            android:id="@+id/etAddress"
+            style="@style/etContactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_map"
+            android:drawablePadding="5dp"
+            android:hint="@string/address"
+            android:inputType="textNoSuggestions|textVisiblePassword" />
 
-    <EditText
-        android:id="@+id/etMail"
-        style="@style/etContactInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/email"
-        android:drawableStart="@drawable/ic_mail"
-        android:drawableLeft="@drawable/ic_mail"
-        android:drawablePadding="5dp"
-        />
+        <EditText
+            android:id="@+id/etMail"
+            style="@style/etContactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="5dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
 
-    <EditText
-        android:id="@+id/etCountry"
-        style="@style/etContactInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/country"
-        android:drawableStart="@drawable/ic_planet"
-        android:drawableLeft="@drawable/ic_planet"
-        android:drawablePadding="5dp"/>
+        <AutoCompleteTextView
+            android:id="@+id/etCountry"
+            style="@style/etContactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_planet"
+            android:drawablePadding="5dp"
+            android:hint="@string/country"
+            android:inputType="text"/>
 
-    <EditText
-        android:id="@+id/etCity"
-        style="@style/etContactInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/city"
-        android:drawableStart="@drawable/ic_city"
-        android:drawableLeft="@drawable/ic_city"
-        android:drawablePadding="5dp"/>
+        <AutoCompleteTextView
+            android:id="@+id/etCity"
+            style="@style/etContactInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_city"
+            android:drawablePadding="5dp"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
 
-    <Button
-        android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_margin="20dp"
-        android:text="@string/next" />
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="20dp"
+            android:text="@string/next" />
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

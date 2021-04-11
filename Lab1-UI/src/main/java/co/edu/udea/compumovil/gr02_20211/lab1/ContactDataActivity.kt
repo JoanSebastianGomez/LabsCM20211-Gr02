@@ -3,6 +3,7 @@ package co.edu.udea.compumovil.gr02_20211.lab1
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Toast
 import co.edu.udea.compumovil.gr02_20211.lab1.databinding.ActivityContactDataBinding
@@ -10,13 +11,15 @@ import co.edu.udea.compumovil.gr02_20211.lab1.databinding.ActivityContactDataBin
 class ContactDataActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityContactDataBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityContactDataBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.btnNext.setOnClickListener { nextClick() }
+        val countries = resources.getStringArray(R.array.countries_array)
+        ArrayAdapter(this, android.R.layout.simple_list_item_1, countries).also { adapter ->
+            binding.etCountry.setAdapter(adapter)
+        }
     }
 
     private fun nextClick() {
