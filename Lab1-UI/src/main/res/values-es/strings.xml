@@ -1,26 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Labs20211-Gr02</string>
-    <string name="informacion_personal">Personal information</string>
-    <string name="women">Women</string>
-    <string name="men">Men</string>
-    <string name="sex">Gender:</string>
-    <string name="date">Birth date:</string>
-    <string name="next">Next</string>
-    <string name="last_name">Last name</string>
-    <string name="name">Name</string>
-    <string name="change">Change</string>
-    <string name="contact_info">Contact information</string>
-    <string name="phone">Phone</string>
-    <string name="address">Address</string>
+    <string name="informacion_personal">Informacion personal</string>
+    <string name="women">Mujer</string>
+    <string name="men">Hombre</string>
+    <string name="sex">Sexo:</string>
+    <string name="date">Fecha de nacimiento:</string>
+    <string name="next">Siguiente</string>
+    <string name="last_name">Apellidos</string>
+    <string name="name">Nombre</string>
+    <string name="change">Cambiar</string>
+    <string name="contact_info">Información de contacto</string>
+    <string name="phone">Teléfono</string>
+    <string name="address">Dirección</string>
     <string name="email">Email</string>
-    <string name="country">Country</string>
-    <string name="city">City</string>
+    <string name="country">País</string>
+    <string name="city">Ciudad</string>
     <string-array name="study">
-        <item>Education level</item>
-        <item>Elemental school</item>
-        <item>High school</item>
-        <item>University</item>
-        <item>Other</item>
+        <item>Grado de escolaridad</item>
+        <item>primaria</item>
+        <item>secundaria</item>
+        <item>universidad</item>
+        <item>otro</item>
     </string-array>
 
     <string-array name="countries_array">
