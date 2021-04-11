@@ -9,6 +9,12 @@
     <string name="last_name">Apellidos</string>
     <string name="name">Nombre</string>
     <string name="change">Cambiar</string>
+    <string name="contact_info">Información de contacto</string>
+    <string name="phone">Teléfono</string>
+    <string name="address">Dirección</string>
+    <string name="email">Email</string>
+    <string name="country">País</string>
+    <string name="city">Ciudad</string>
     <string-array name="study">
         <item>Grado de escolaridad</item>
         <item>primaria</item>

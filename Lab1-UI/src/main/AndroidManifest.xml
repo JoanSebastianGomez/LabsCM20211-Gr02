@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Labs20211Gr02">
-        <activity android:name=".PersonalDataActivity">
+        <activity android:name=".ContactDataActivity"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity android:name=".PersonalDataActivity"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

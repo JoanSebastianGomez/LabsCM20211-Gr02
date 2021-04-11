@@ -1,6 +1,7 @@
 package co.edu.udea.compumovil.gr02_20211.lab1
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.DatePicker
@@ -42,6 +43,10 @@ class PersonalDataActivity : AppCompatActivity(), DatePickerDialog.OnDateSetList
                         "- Sexo: $sex - Fecha de nacimiento: ${etBirthDate.text} - " +
                         "Estudios: $studies"
                 Log.d("MAIN", response)
+                startActivity(Intent(
+                    this@PersonalDataActivity,
+                    ContactDataActivity::class.java)
+                )
             }
         } else Toast.makeText(
             this@PersonalDataActivity,
