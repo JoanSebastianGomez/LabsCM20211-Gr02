@@ -9,11 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:paddingBottom="10dp"
-        tools:context=".MainActivity">
-
+        tools:context=".PersonalDataActivity">
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/g2"
+            android:id="@+id/g1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -22,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/g8"
+            android:id="@+id/g9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -31,30 +30,31 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/information"
+            android:id="@+id/tvTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
             android:text="@string/informacion_personal"
             android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="@id/g8"
-            app:layout_constraintStart_toStartOf="@id/g2"
+            app:layout_constraintEnd_toEndOf="@id/g9"
+            app:layout_constraintStart_toStartOf="@id/g1"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:id="@+id/llnames"
+            android:id="@+id/llInfo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:weightSum="2"
-            app:layout_constraintEnd_toEndOf="@id/g8"
-            app:layout_constraintStart_toStartOf="@id/g2"
-            app:layout_constraintTop_toBottomOf="@id/information">
+            app:layout_constraintEnd_toEndOf="@id/g9"
+            app:layout_constraintStart_toStartOf="@id/g1"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle">
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/etName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -62,48 +62,59 @@
                 android:inputType="textPersonName" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/etLastName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_weight="1"
                 android:hint="@string/last_name"
                 android:inputType="textPersonName" />
 
-
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/llsexo"
+            android:id="@+id/llSex"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:weightSum="2"
-            app:layout_constraintEnd_toEndOf="@id/g8"
-            app:layout_constraintStart_toStartOf="@id/g2"
-            app:layout_constraintTop_toBottomOf="@id/llnames">
+            app:layout_constraintEnd_toEndOf="@id/g9"
+            app:layout_constraintStart_toStartOf="@id/g1"
+            app:layout_constraintTop_toBottomOf="@id/llInfo">
 
             <TextView
                 android:id="@+id/sexo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:text="@string/sex" />
 
-            <RadioButton
-                android:id="@+id/radioButton"
+            <RadioGroup
+                android:id="@+id/rgSex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/men" />
+                android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/women" />
+                <RadioButton
+                    android:id="@+id/rbMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/men" />
+
+                <RadioButton
+                    android:id="@+id/rbWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/women" />
+
+            </RadioGroup>
 
         </LinearLayout>
 
@@ -115,40 +126,37 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:weightSum="2"
-            app:layout_constraintEnd_toEndOf="@id/g8"
-            app:layout_constraintStart_toStartOf="@id/g2"
-            app:layout_constraintTop_toBottomOf="@id/llsexo">
+            app:layout_constraintEnd_toEndOf="@id/g9"
+            app:layout_constraintStart_toStartOf="@id/g1"
+            app:layout_constraintTop_toBottomOf="@id/llSex">
 
             <TextView
-                android:id="@+id/textView9"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/date" />
 
             <EditText
-                android:id="@+id/date"
+                android:id="@+id/etBirthDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:hint="@string/change"
                 android:layout_weight="1"
                 android:clickable="true"
                 android:focusable="false"
+                android:hint="@string/change"
                 android:inputType="date"
-                android:maxLines="1"
-                />
+                android:maxLines="1" />
+
         </LinearLayout>
 
         <Spinner
-            android:id="@+id/studyspinner"
+            android:id="@+id/spStudies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:entries="@array/study"
-            app:layout_constraintStart_toStartOf="@id/g2"
-            app:layout_constraintTop_toBottomOf="@id/llfecha"
-
-            />
+            app:layout_constraintStart_toStartOf="@id/g1"
+            app:layout_constraintTop_toBottomOf="@id/llfecha" />
 
         <Button
             android:id="@+id/btnNext"
@@ -156,12 +164,10 @@
             android:layout_height="wrap_content"
             android:text="@string/next"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/g8"
-            app:layout_constraintTop_toBottomOf="@id/studyspinner"
-
-            />
-
+            app:layout_constraintEnd_toEndOf="@id/g9"
+            app:layout_constraintTop_toBottomOf="@id/spStudies" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </ScrollView>
 
