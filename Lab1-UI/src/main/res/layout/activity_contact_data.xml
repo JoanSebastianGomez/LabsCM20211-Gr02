@@ -29,6 +29,10 @@
     <EditText
         android:id="@+id/etAddress"
         style="@style/etContactInfo"
+        android:drawableStart="@drawable/ic_map"
+        android:drawableLeft="@drawable/ic_map"
+        android:drawablePadding="5dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/address" />
@@ -38,21 +42,31 @@
         style="@style/etContactInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email" />
+        android:hint="@string/email"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawableLeft="@drawable/ic_mail"
+        android:drawablePadding="5dp"
+        />
 
     <EditText
         android:id="@+id/etCountry"
         style="@style/etContactInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/country" />
+        android:hint="@string/country"
+        android:drawableStart="@drawable/ic_planet"
+        android:drawableLeft="@drawable/ic_planet"
+        android:drawablePadding="5dp"/>
 
     <EditText
         android:id="@+id/etCity"
         style="@style/etContactInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/city" />
+        android:hint="@string/city"
+        android:drawableStart="@drawable/ic_city"
+        android:drawableLeft="@drawable/ic_city"
+        android:drawablePadding="5dp"/>
 
     <Button
         android:id="@+id/btnNext"

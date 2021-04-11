@@ -53,7 +53,10 @@
             android:hint="@string/name"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="@id/g1"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="5dp"/>
 
         <EditText
             android:id="@+id/etLastName"
@@ -64,7 +67,10 @@
             android:hint="@string/last_name"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="@id/g1"
-            app:layout_constraintTop_toBottomOf="@+id/etName" />
+            app:layout_constraintTop_toBottomOf="@+id/etName"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="5dp"/>
 
         <LinearLayout
             android:id="@+id/llsexo"
@@ -81,7 +87,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="@string/sex" />
+                android:text="@string/sex"
+                android:drawableStart="@drawable/ic_sex"
+                android:drawableLeft="@drawable/ic_sex"
+                android:drawablePadding="5dp"/>
 
             <RadioGroup
                 android:id="@+id/rgSex"
@@ -125,7 +134,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/date" />
+                android:text="@string/date"
+                android:drawableStart="@drawable/ic_date"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="5dp"
+                android:textSize="13sp"/>
 
             <EditText
                 android:id="@+id/etBirthDate"
@@ -147,7 +160,8 @@
             android:layout_marginTop="30dp"
             android:entries="@array/study"
             app:layout_constraintStart_toStartOf="@id/g1"
-            app:layout_constraintTop_toBottomOf="@id/llDate" />
+            app:layout_constraintTop_toBottomOf="@id/llDate"
+            />
 
         <Button
             android:id="@+id/btnNext"
