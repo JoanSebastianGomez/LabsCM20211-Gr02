@@ -8,6 +8,7 @@
     <string name="next">Siguiente</string>
     <string name="last_name">Apellidos</string>
     <string name="name">Nombre</string>
+    <string name="change">Cambiar</string>
     <string-array name="study">
         <item>Grado de escolaridad</item>
         <item>primaria</item>

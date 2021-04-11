@@ -6,10 +6,12 @@ plugins {
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId "co.edu.udea.compumovil.gr02_20211.lab1"
-        minSdkVersion 22
+        minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
