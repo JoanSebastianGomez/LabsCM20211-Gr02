@@ -28,49 +28,49 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:hint="Name"
+            android:hint="@string/name"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Description"
+            android:hint="@string/description"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Score"
+            android:hint="@string/score"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/information"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Information"
+            android:hint="@string/information"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Location"
+            android:hint="@string/location"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/temperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Temperature"
+            android:hint="@string/temperature"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/recommendations"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Recommendations"
+            android:hint="@string/recommendations"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -80,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Add"
+        android:text="@string/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnCancel"
         app:layout_constraintStart_toStartOf="parent" />
@@ -90,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Cancel"
+        android:text="@string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnAdd" />

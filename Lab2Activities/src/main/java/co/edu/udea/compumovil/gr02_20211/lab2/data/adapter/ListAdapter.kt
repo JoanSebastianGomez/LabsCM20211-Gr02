@@ -1,20 +1,21 @@
-package co.edu.udea.compumovil.gr02_20211.lab2
+package co.edu.udea.compumovil.gr02_20211.lab2.data.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Callback
+import co.edu.udea.compumovil.gr02_20211.lab2.R
+import co.edu.udea.compumovil.gr02_20211.lab2.data.database.entity.PlaceEntity
+import co.edu.udea.compumovil.gr02_20211.lab2.data.models.PlacesListObject
 import com.squareup.picasso.Picasso
-import java.lang.Exception
 
 class ListAdapter(
-    private val data: MutableList<PlacesListObject>,
     private val listener: InterfaceClickAdapter
 ) : RecyclerView.Adapter<ListAdapter.ViewHolder>() {
+
+    private val data = mutableListOf<PlaceEntity>()
 
     class ViewHolder(
         itemView: View,
@@ -47,6 +48,14 @@ class ListAdapter(
     }
 
     override fun getItemCount() = data.size
+
+    fun updateData(newData: Collection<PlaceEntity>) {
+        data.apply {
+            clear()
+            addAll(newData)
+        }
+        notifyDataSetChanged()
+    }
 
 }
 

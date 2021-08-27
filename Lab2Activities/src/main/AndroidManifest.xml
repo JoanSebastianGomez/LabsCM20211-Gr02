@@ -11,13 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Labs20211Gr02">
-        <activity android:name=".DetailsActivity" />
-        <activity android:name=".PlacesActivity" />
+        <activity android:name=".view.fragment.DetailsFragment" />
+        <activity android:name=".view.activity.MainActivity" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".view.activity.RegisterActivity"
             android:label="@string/title_activity_register" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".view.activity.LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddPlaceActivity" />
+        <activity android:name=".view.fragment.AddPlacesFragment" />
     </application>
 
 </manifest>
