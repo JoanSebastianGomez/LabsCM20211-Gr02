@@ -12,6 +12,9 @@ interface UserDao {
     @Query("Select * from userentity")
     fun getEntities() : List<UserEntity>
 
+    @Query("Select * from userentity where email=:user and password=:password   ")
+    fun getUserLogin(user: String, password:String) : List<UserEntity>
+
     @Delete
     fun deleteEntity(entity: UserEntity)
 

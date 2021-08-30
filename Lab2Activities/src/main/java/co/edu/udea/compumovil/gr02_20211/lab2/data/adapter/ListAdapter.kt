@@ -3,6 +3,7 @@ package co.edu.udea.compumovil.gr02_20211.lab2.data.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -21,13 +22,14 @@ class ListAdapter(
         itemView: View,
         private val listener: InterfaceClickAdapter
     ) : RecyclerView.ViewHolder(itemView) {
-
+        val buttonDelete: ImageButton = itemView.findViewById(R.id.buttonDelete)
         val itemImage: ImageView = itemView.findViewById(R.id.thumbnail)
         val itemName: TextView = itemView.findViewById(R.id.name)
         val itemScore: TextView = itemView.findViewById(R.id.score)
         val itemDescription: TextView = itemView.findViewById(R.id.description)
 
         init {
+            buttonDelete.setOnClickListener { listener.delete(adapterPosition) }
             itemView.setOnClickListener { listener.onPlaceClick(adapterPosition) }
         }
     }
@@ -61,4 +63,5 @@ class ListAdapter(
 
 interface InterfaceClickAdapter {
     fun onPlaceClick(position: Int)
+    fun delete(position: Int)
 }
