@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import co.edu.udea.compumovil.gr02_20211.lab2.R
@@ -26,14 +27,14 @@ class AddPlacesFragment : Fragment() {
         findViewById<Button>(R.id.btnAdd).setOnClickListener {
             insert(
                 PlaceEntity(
-                    "Angieeeeeeeee 5",
-                    "Angie descr",
-                    "Angie Info",
-                    "Angie location",
-                    "Angie temp",
-                    "Angie recomm",
+                    findViewById<EditText>(R.id.name).text.toString(),
+                    findViewById<EditText>(R.id.description).text.toString(),
+                    findViewById<EditText>(R.id.information).text.toString(),
+                    findViewById<EditText>(R.id.location).text.toString(),
+                    findViewById<EditText>(R.id.temperature).text.toString(),
+                    findViewById<EditText>(R.id.recommendations).text.toString(),
                     "https://revistatravelmanager.com/wp-content/uploads/2019/05/parque-de-ueno-Tokio.jpg",
-                    "5"
+                    findViewById<EditText>(R.id.score).text.toString()
                 )
             )
             goUp()
