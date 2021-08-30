@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi app hermosita</string>
+    <string name="informacion_personal">Personal information</string>
+    <string name="women">Woman</string>
+    <string name="men">Man</string>
+    <string name="sex">Gender:</string>
+    <string name="date">Birth date:</string>
+    <string name="next">Next</string>
+    <string name="last_name">Lastname</string>
+    <string name="name">Name</string>
+    <string name="change">Change</string>
+    <string name="contact_info">Contact information</string>
+    <string name="phone">Telephone</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string-array name="study">
+        <item>Education level</item>
+        <item>Kindergarten</item>
+        <item>High school</item>
+        <item>University</item>
+        <item>Other</item>
+    </string-array>
+</resources>

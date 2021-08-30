@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Tokyo Places</string>
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_logout">Log Out</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login">Sign In</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_places">Tokyo most famous \n places</string>
+    <string name="title_activity_add_places">Add Place</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Notifications</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="notifications">Turn on notifications</string>
+    <string name="notifications_sound">Turn on notifications sound</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="score">Score</string>
+    <string name="information">Information</string>
+    <string name="location">Location</string>
+    <string name="temperature">Temperature</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

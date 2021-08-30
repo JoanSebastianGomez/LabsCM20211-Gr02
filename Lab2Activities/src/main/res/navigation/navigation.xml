@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/placesFragment">
+
+    <fragment
+        android:id="@+id/placesFragment"
+        android:name="co.edu.udea.compumovil.gr02_20211.lab2.view.fragment.PlacesFragment"
+        android:label="PlacesFragment">
+        <action
+            android:id="@+id/action_placesFragment_to_preferenceFragment"
+            app:destination="@id/preferenceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/preferenceFragment"
+        android:name="co.edu.udea.compumovil.gr02_20211.lab2.view.fragment.PreferenceFragment"
+        android:label="PreferenceFragment">
+        <action
+            android:id="@+id/action_preferenceFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="co.edu.udea.compumovil.gr02_20211.lab2.view.activity.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+
+    <fragment
+        android:id="@+id/addPlacesFragment"
+        android:name="co.edu.udea.compumovil.gr02_20211.lab2.view.fragment.AddPlacesFragment"
+        android:label="AddPlacesFragment" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="co.edu.udea.compumovil.gr02_20211.lab2.view.fragment.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+
+</navigation>
